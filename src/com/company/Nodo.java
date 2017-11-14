@@ -1,35 +1,38 @@
-package com.company;
 
 /**
  * Created by Alicia Flores on 08/11/2017.
  */
-public class Nodo {
-    private int valor;
+public class Nodo { //Se crea la clase Nodo
+    private int valor; //Definimos una  variable de tipo entero
 
 
 
-    private Nodo prox;
+    private Nodo prox; //Dentro de esto lo definimos un prox(Valor proximo)
 
-    public Nodo (){
-        this.valor = 0;
-        this.prox  = null;
+    public Nodo (){ //Se inicializa
+        this.valor = 0; //se inicialoza el valor con 0
+        this.prox  = null;// se inicializa proximo como null
     }
-    public Nodo (int v){
-        this.valor = v;
-        this.prox= null;
-    }
-
-    public void setValor(int v) {
-        valor = v;
-    }
-    public void setProx(Nodo prox) {
-        this.prox = prox;
+    public Nodo (int v){ //Declaración de objetos
+        this.valor = v; //Define el valor para la declaración de objetos
+        this.prox= null;//Feni el valor proximo como null
     }
 
-    public int getvalor(){
-        return valor;
+    public void setValor(int v) //Manda a traer el valor
+    {
+        valor = v; //Muestra el valor obtenido
     }
-    public Nodo getProx(){
-        return prox;
+    public void setProx(Nodo prox) //Manda a traer el valor proximo
+    {
+        this.prox = prox; //Muestra el valor proximo
+    }
+
+    public int getvalor() //Mamnda a traer el valor
+    {
+        return valor;//Retorna el valor
+    }
+    public Nodo getProx() //Manda a traer el valor proximo
+    {
+        return prox;//Retorna el valor proximo
     }
 }

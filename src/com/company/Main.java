@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static int min = 10000;
-    private static int max = 0;
     public static void main(String[] args) {
         // write your code here
         Scanner sc = new Scanner(System.in);
@@ -86,31 +84,31 @@ public class Main {
 
                 //Mostrar el número máximo de la pila
                 case "6": {
-                    System.out.println ("\t Número Maximo");
+                    System.out.println ("\t Número Máximo"); //Manda mensaje con el texto "Número máximo"
 
-                    break;
+                    break; //Descanso
                 }
 
                 //Mostrar el número minimo de la pila
                 case "7": {
-                    System.out.println ( "\t Número Minimo" );
+                    System.out.println ( "\t Número Minimo" ); //Manda mensaje con el texto "Número minimo"
 
-                    break;
+                    break; //Descanso
                 }
 
                 //Terminacíon del proceso
                 case "8": {
-                    System.out.println ( "\t Terminar" );
-                    System.exit ( 0 );
+                    System.out.println ( "\t Terminar" );//Manda mensaje con el texto "Terminar"
+                    System.exit ( 0 );//Termina el proceso
 
-                    break;
+                    break; //Descanso
                 }
-                default:
-                    System.out.println("Opción incorrecta");
-                    break;
+                default: //Por defecto
+                    System.out.println("Opción incorrecta"); //Manda mensaje con el texto "Opción incorrecta"
+                    break;//Descanso
             }
 
-        } while (!opcion.equals("6"));
+        } while (!opcion.equals("8"));
 
     }
 }
